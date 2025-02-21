@@ -9,7 +9,7 @@ function App() {
 
   const handleClick = async () => {
     console.log(input)
-    const response = await fetch("http://localhost:4001/bfhl", {
+    const response = await fetch("https://bajaj-oui4.onrender.com/bfhl", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -24,7 +24,7 @@ function App() {
   }
 
   const hanldeClick2 = async () => {
-    const response = await fetch("http://localhost:4001/bfhl")
+    const response = await fetch("https://bajaj-oui4.onrender.com/bfhl")
     const data = await response.json()
     console.log(data)
     setOutput2(JSON.stringify(data))
